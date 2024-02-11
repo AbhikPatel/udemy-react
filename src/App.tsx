@@ -1,34 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Header from "./Header"
+import Footer from "./Footer"
 import './App.css'
+import ItemForm from "./ItemForm"
+import ItemList from "./ItemList"
+import { useState } from "react"
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+
+  const [items, setItems] = useState([]);
+
+  const addItem = (item) => {
+    setItems([...items, item]);
+  }
+
+  const deleteItem = (id) => {
+    setItems((res) => res.filter((data) => data.id !== id))
+  }
+
+  const packItem = (id) => {
+    setItems((items) => items.map((item) => item.id === id ? { ...item, packed: !item.packed } : item));
+  }
+
+  const clearList = () => {
+    setItems([]);
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="h-100 d-flex flex-column">
+      <div className="header-container">
+        <Header />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="flex-grow-1 d-flex flex-column">
+        <div className="form-container">
+          <ItemForm add={addItem} />
+        </div>
+
+        <div className="flex-grow-1">
+          <ItemList list={items} deleteItem={deleteItem} packItem={packItem} clearList={clearList}/>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className="header-container">
+        <Footer list={items} />
+      </div>
+    </div>
   )
 }
 
