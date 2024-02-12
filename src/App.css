@@ -17,3 +17,22 @@ body {
 .header-container {
   flex: 0 0 60px;
 }
+
+.splitter-container {
+  height: 600px;
+  width: 1000px;
+}
+
+.profile-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* form {
+  background-color: #d4d7f9;
+} */
+
+.bill {
+  background-color: #edeef7;
+}
