@@ -14,6 +14,43 @@ body {
   overflow: hidden;
 }
 
-.header-container {
+header {
   flex: 0 0 60px;
+  background-color: #921dff;
+}
+
+.bg-list {
+  background-color: #313131;
+}
+
+form {
+  width: 400px;
+}
+
+.movie-img {
+  width: 60px;
+}
+
+.movie-poster {
+  width: 180px;
+}
+
+.movie-card {
+  border-bottom: 2px solid #414141;
+}
+
+.movie-card:hover {
+  background-color: #414141;
+}
+
+.selected{
+  background-color: #414141;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+.loader-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
