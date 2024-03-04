@@ -1,0 +1,74 @@
+{
+  "domain": [
+    {
+      "id": 1,
+      "domainName": "Frontend"
+    },
+    {
+      "id": 2,
+      "domainName": "Backend"
+    },
+    {
+      "id": 3,
+      "domainName": "Business Analysis"
+    },
+    {
+      "id": 4,
+      "domainName": "Devops"
+    },
+    {
+      "id": 5,
+      "domainName": "UI/UX"
+    },
+    {
+      "id": 6,
+      "domainName": "Machine Learning"
+    },
+    {
+      "id": 7,
+      "domainName": "Database"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "cityName": "Valsad"
+    },
+    {
+      "id": 2,
+      "cityName": "Vapi"
+    },
+    {
+      "id": 3,
+      "cityName": "Surat"
+    },
+    {
+      "id": 4,
+      "cityName": "Daman"
+    },
+    {
+      "id": 5,
+      "cityName": "Navsari"
+    },
+    {
+      "id": 6,
+      "cityName": "Chikli"
+    },
+    {
+      "id": 7,
+      "cityName": "Dugri"
+    }
+  ],
+  "employees": [
+    {
+      "name": "Abhishek",
+      "domain": "UI/UX",
+      "age": "19",
+      "mobile": "89452363210",
+      "gender": "male",
+      "dob": "2024-03-13",
+      "city": "Valsad",
+      "id": 3
+    }
+  ]
+}

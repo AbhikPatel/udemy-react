@@ -18,3 +18,34 @@ body {
 .header-container {
   flex: 0 0 60px;
 }
+
+table {
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0.5rem;
+  background-color: #e2e2e2;
+}
+
+tr {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
