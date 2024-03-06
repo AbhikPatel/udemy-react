@@ -2,7 +2,7 @@
 const SearchPost = ({ searchPosts }) => {
 
   const handleSearch = (value) => {
-    searchPosts(value);
+    value !== '' && searchPosts(value);
   }
 
   return (

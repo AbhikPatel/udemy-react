@@ -1,7 +1,7 @@
 import FormPost from "./components/FormPost"
 import Posts from "./components/Posts"
 
-const Home = ({ posts }) => {
+const Home = () => {
   return (
     <div className="h-100 d-flex flex-column overflow-hidden">
       <div className="form-container shadow">
@@ -9,7 +9,7 @@ const Home = ({ posts }) => {
       </div>
       <div className="flex-grow-1 overflow-auto">
         <div className="container">
-          <Posts posts={posts} />
+          <Posts />
         </div>
       </div>
     </div>

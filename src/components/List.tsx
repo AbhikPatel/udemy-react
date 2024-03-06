@@ -1,5 +1,14 @@
+import { useContext, useEffect } from "react";
+import { PostContext } from "../App";
 
-const List = ({ posts }) => {
+const List = () => {
+
+  const { posts, setPosts } = useContext(PostContext);
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/posts`).then((res) => res.json()).then((res) => setPosts(res))
+  }, [])
+
   return (
     <div className="row g-4">
       {

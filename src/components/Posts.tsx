@@ -1,9 +1,9 @@
 import List from "./List"
 
-const Posts = ({ posts }) => {
+const Posts = () => {
   return (
     <section className="p-4">
-      <List posts={posts}/>
+      <List />
     </section>
   )
 }
