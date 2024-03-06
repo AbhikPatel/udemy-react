@@ -1,9 +1,8 @@
-import { useContext, useEffect } from "react";
-import { PostContext } from "../App";
-
+import { useEffect } from "react";
+import { usePosts } from "../Context/PostContextProvider";
 const List = () => {
 
-  const { posts, setPosts } = useContext(PostContext);
+  const { posts, setPosts } = usePosts();
 
   useEffect(() => {
     fetch(`http://localhost:3000/posts`).then((res) => res.json()).then((res) => setPosts(res))

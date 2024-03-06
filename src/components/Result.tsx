@@ -1,7 +1,11 @@
+import { usePosts } from "../Context/PostContextProvider";
 
-const Result = ({ count }) => {
+const Result = () => {
+
+  const { posts } = usePosts();
+
   return (
-    <h5 className="m-0"> 🚀 {count} Posts found. </h5>
+    <h5 className="m-0"> 🚀 {posts.length} Posts found. </h5>
   )
 }
 
