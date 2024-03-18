@@ -18,3 +18,23 @@ body {
 .header-container {
   flex: 0 0 60px;
 }
+
+.bg-theme {
+  background-color: #e7e7e7;
+  padding: 0.8rem;
+}
+
+input {
+  padding: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid #a1a1a1;
+}
+
+button {
+  border: 1px solid #919191;
+  background-color: #dbdbdb;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
