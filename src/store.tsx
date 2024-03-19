@@ -1,10 +1,19 @@
-const initialState = {
-    bal: 0,
-    loan: 0,
-    reason: ''
-}
+import { configureStore } from "@reduxjs/toolkit";
+import customerReducer from "./Slices/customerReducer";
+import accountReducer from "./Slices/accountReducer";
 
-function reducer(state, action) {
-    return state;
-}
+// const root = combineReducers({
+//     account: accountReducer,
+//     customer : customerReducer
+// });
 
+// const store = createStore(root);
+
+const store = configureStore({
+    reducer: {
+        account: accountReducer,
+        customer: customerReducer
+    }
+})
+
+export default store;
