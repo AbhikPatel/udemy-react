@@ -18,3 +18,25 @@ body {
 .header-container {
   flex: 0 0 60px;
 }
+
+table {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+th {
+  background-color: #b5b5b5;
+}
+
+.loader {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
